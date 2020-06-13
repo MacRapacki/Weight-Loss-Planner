@@ -86,6 +86,11 @@ btn.addEventListener('click', () => {
     if (parseInt(weightDesireRange.value) >= parseInt(weightRange.value)) {
         return alert('Desire weight has to be less than Your weight')
     }
+
+    if (startDate.value === "" || endDate.value === "") {
+        return alert('Set start and end date')
+    }
+
     weightDifference.innerHTML = `You want to loose ${weightRange.value - weightDesireRange.value} kg`;
     currentBmi.innerHTML = `Your current BMI is ${bmiCounter()} (${bmiStatus()})`;
     desireBmi.innerHTML = `Your desire BMI is ${desireBmiCounter()} (${desireBmiStatus()})`;
