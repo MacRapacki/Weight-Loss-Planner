@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Loss planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Weight Loss Planner</h1>
+
+        <label class="range__label">Your weight:<span class="user__weight">80 kg</span> <input class="weight__input"
+                type="range" value="80" max="160" min="50"></label>
+        <label class="range__label">Desire weight:<span class="desire__weight">80 kg</span> <input class="desire__input"
+                type="range" value="80" max="160" min="50"></label>
+        <label class="range__label">Height:<span class="user__height">175 cm</span> <input class="height" type="range"
+                value="175" max="230" min="130"></label>
+
+        <label class="date__label">Start date: <span class="start__date"></span><input class="start__date__input"
+                type="date"></label>
+        <label class="date__label">End date: <span class="end__date"></span><input class="end__date__input"
+                type="date"></label>
+
+        <button class="calculate__btn">Calculate</button>
+
+        <div class="result">
+            <p class="difference"></p>
+            <p class="current__bmi"></p>
+            <p class="desire__bmi"></p>
+            <p class="day__loose"></p>
+        </div>
+
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
