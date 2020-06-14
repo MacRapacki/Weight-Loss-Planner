@@ -5,7 +5,9 @@
 }
 
 body {
-    background-color: lightgray;
+    min-height: 100vh;
+    background: rgb(237, 237, 237);
+    background: linear-gradient(180deg, rgba(237, 237, 237, 1) 36%, rgba(74, 94, 111, 1) 95%);
 }
 
 .wrapper {

@@ -71,6 +71,7 @@ const dayLoose = document.querySelector('.day__loose')
 const startDate = document.querySelector('.start__date__input')
 const endDate = document.querySelector('.end__date__input')
 
+
 /// DAY DIFFRENCE COUNT
 const weightPerDay = () => {
     const dayNumber = parseInt((new Date(endDate.value) - new Date(startDate.value)) / (24 * 3600 * 1000));
@@ -78,6 +79,7 @@ const weightPerDay = () => {
     return (weightToLoose / dayNumber).toFixed(2)
     // return weightToLoose / dayNumber
 }
+
 
 /// HANDLE BUTTON
 const btn = document.querySelector('.calculate__btn')
