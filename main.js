@@ -76,6 +76,7 @@ const endDate = document.querySelector('.end__date__input')
 const weightPerDay = () => {
     const dayNumber = parseInt((new Date(endDate.value) - new Date(startDate.value)) / (24 * 3600 * 1000));
     const weightToLoose = weightRange.value - weightDesireRange.value;
+
     return (weightToLoose / dayNumber).toFixed(2)
     // return weightToLoose / dayNumber
 }
@@ -89,8 +90,12 @@ btn.addEventListener('click', () => {
         return alert('Desire weight has to be less than Your weight')
     }
 
-    if (startDate.value === "" || endDate.value === "") {
-        return alert('Set start and end date')
+    if (startDate.value === "" || endDate.value === "" || startDate.value === endDate.value) {
+        return alert('Start date need to be before end date')
+    }
+
+    if ((weightPerDay()) <= 0) {
+        return alert('You have to set minimum one day forward')
     }
 
     weightDifference.innerHTML = `You want to loose ${weightRange.value - weightDesireRange.value} kg`;
