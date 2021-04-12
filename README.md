@@ -4,13 +4,12 @@
 This project is simple app to check Your BMI and You will get know how many kilograms per day You need to loose to get Your desire weight.
 	
 ## Technologies
-Project is created with:
-* Lorem version: 12.3
-* Ipsum version: 2.33
-* Ament library version: 999
+-HTML
+-CSS
+-Vanilla JS
 	
 ## Setup
-To run this project, install it locally using npm:
+To run this project, download it and run index.html file in Your browser.
 
 ```
 $ cd ../lorem
