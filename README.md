@@ -1,7 +1,8 @@
 # Weight-Loss-Planner
 
 ## General info
-This project is simple app to check Your BMI and You will get know how many kilograms per day You need to loose to get Your desire weight.
+This project is simple app to check Your BMI and You will get know how many kilograms per day You need to loose to get Your desire weight. 
+* [Check this app live](https://macrapacki.github.io/Weight-Loss-Planner/)
 	
 ## Technologies
 - HTML
